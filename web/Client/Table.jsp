@@ -34,7 +34,7 @@
         </c:forEach>
         <tr>
             <td colspan="4" align="center">
-                <input id = "back" type="submit" value="Назад" onclick="location.href = 'http://localhost:41200/WEB_2_Web/Client/Main.jsp'">
+                <input id = "back" type="submit" value="Назад" onclick="location.href = 'http://localhost:8080/WEB_2_Web_exploded/Client/Main.jsp'">
             </td>
         </tr>
     </table>

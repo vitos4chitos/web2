@@ -23,12 +23,12 @@ td{
     color: white;
     font-family: fantasy;
     font-weight: bolder;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    -moz-text-stroke-color: black;
-    -moz-text-stroke-width: 1px;
-    -ms-text-stroke-color: black;
-    -ms-text-stroke--width: 1px;
+    /*-webkit-text-stroke-color: black;*/
+    /*-webkit-text-stroke-width: 1px;*/
+    /*-moz-text-stroke-color: black;*/
+    /*-moz-text-stroke-width: 1px;*/
+    /*-ms-text-stroke-color: black;*/
+    /*-ms-text-stroke--width: 1px;*/
     font-size: 25px;
     text-shadow: 1px 0 5px #C1CDC1, 2px 0 0 #C1CDC1, 4px 1px 0 #C1CDC1, 5px 2px 0 #C1CDC1, 6px 3px 0 #B0C0C0, 6px 3px 0 #B0C0C0, 6px 3px 11px #100, 1px 0 35px #F0FFF0, 6px 3px 45px #98F5FF;
 }

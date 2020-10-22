@@ -93,10 +93,8 @@ public class AreaCheckServlet extends HttpServlet {
     }
 
     private boolean fourthHalf(double x, double y, double r){
-        double a = r * y;
-        double b = (r - x) * (r) * (-1) - r * y;
-        double c = r * x * (-1);
-        return (a >= 0 && b >= 0 && c >= 0) || (a <= 0 && b <= 0 && c <= 0);
+        logger.info(x - y + " " + r);
+        return x - y <= r;
     }
 
     private boolean thirdHalf(double x, double y, double r){
@@ -133,7 +131,14 @@ public class AreaCheckServlet extends HttpServlet {
 //                "        </td>\n" +
 //                "    </tr>\n" +
 //                "</table>\n");
-        writer.println("ok");
+        if(resultList.getResultList().get(resultList.getResultList().size() - 1).isResult()) {
+            writer.println("green");
+            logger.info("green");
+        }
+        else {
+            writer.println("red");
+            logger.info("red");
+        }
         writer.close();
     }
 
