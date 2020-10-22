@@ -143,13 +143,14 @@ function send(xv, yv, rv) {
         data: {x: xv, y: yv, r: rv},
         url: "../ControllerServlet",
         success: function (e) {
-            if(e.toString() !== "400") {
+            if(!e.toString().includes("ErrorType:")) {
                 console.log("success");
                 // document.querySelector("#answers").innerHTML = e.toString();
-                location.href = 'http://localhost:8080/WEB_2_Web_exploded/Client/Table.jsp'
+                // location.href = 'http://localhost:8080/WEB_2_Web_exploded/Client/Table.jsp'
+                location.href = 'http://localhost:41200/WEB_2_Web/Client/Table.jsp'
             }
             else{
-                alert("Вы пытаетесь обойти систему ай ай ай")
+                alert(e.toString())
             }
 
         },
