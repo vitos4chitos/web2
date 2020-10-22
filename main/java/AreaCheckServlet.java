@@ -34,7 +34,7 @@ public class AreaCheckServlet extends HttpServlet {
         }
         else{
             logger.info("I can't determine the values");
-            resp.getWriter().println("400");
+            resp.getWriter().println("ErrorType: can't determine the values");
         }
     }
 
@@ -134,6 +134,7 @@ public class AreaCheckServlet extends HttpServlet {
 //                "    </tr>\n" +
 //                "</table>\n");
         writer.println("ok");
+        writer.close();
     }
 
     private void saveData(HttpServletRequest req, boolean res){

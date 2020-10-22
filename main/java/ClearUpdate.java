@@ -20,7 +20,7 @@ public class ClearUpdate extends HttpServlet {
         }
         else{
             logger.info("Error with variable.");
-            resp.getWriter().println("400");
+            resp.getWriter().println("ErrorType: Error with variable");
         }
     }
 
